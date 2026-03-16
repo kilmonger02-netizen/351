@@ -1,16 +1,16 @@
 #include <iostream>
 
 struct Calculator {
-    int bit_or(int a, int b){
+    int bit_or(int a, int b){ //Логічне або
         return a | b;
     }
-    int bit_xor(int a, int b) {
+    int bit_xor(int a, int b) { //Виключне або
         return a ^ b;
     }
-    int bit_left(int a, int b) {
+    int bit_left(int a, int b) { //Побітовий здвиг вліво
         return a << b;
     }
-    int bit_right(int a, int b) {
+    int bit_right(int a, int b) { //Побітовий здвиг вправо
         return a >> b;
     }
 
@@ -23,6 +23,8 @@ struct Calculator {
 
         std::cout << "First number:";
         std::cin >> a;
+
+        //Вибір
 
         std::cout << "1 - OR\n";
         std::cout << "2 - XOR\n";
